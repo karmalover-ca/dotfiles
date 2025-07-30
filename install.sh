@@ -7,13 +7,7 @@ CODE_PATH=~/.local/share/code-server
 echo "Copying settings.json to ${CODE_PATH}/User"
 cp ./settings.json ${CODE_PATH}/User/
 
-echo "Copying extentions.tar.gz to ${CODE_PATH}"
-cp ./extensions.tar.gz ${CODE_PATH}
-
-echo "Extracting ${CODE_PATH}/extensions.tar.gz"
-tar xzf ${CODE_PATH}/extensions.tar.gz
-
-echo "Removing ${CODE_PATH}/extensions.tar.gz"
-rm ${CODE_PATH}/extensions.tar.gz
+echo "Extracting ./extensions.tar.gz to ${CODE_PATH}"
+tar -xzf ./extensions.tar.gz -C ${CODE_PATH}
 
 echo "Profile install complete!"
