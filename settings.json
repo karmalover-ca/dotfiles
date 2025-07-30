@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "window.menuBarVisibility": "classic",
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.heatmap.locations": [
+        "overview",
+        "gutter"
+    ]
+}
